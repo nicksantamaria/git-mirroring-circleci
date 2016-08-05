@@ -8,7 +8,7 @@ This project is an example of how to use CircleCI to automatically mirror a Gith
 
 ### Repository Setup
 
-1. Copy the `circle.yml` file from this project into your repository root.
+1. Copy the [circle.yml](circle.yml) file from this project into your repository root.
 2. Change the `GIT_MIRROR_URL` variable to the destination git remote URL.
 3. Commit the file to your repo and push to github.
 
