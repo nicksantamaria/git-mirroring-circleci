@@ -1,7 +1,7 @@
 machine:
   environment:
     # Replace this URL with remote git server to mirror project.
-    GIT_MIRROR_URL: git@internal-git.vmg.net:project.git
+    GIT_MIRROR_URL: git@bitbucket.org:nicksantamaria/git-mirroring-circleci.git
 
 test:
   override:
