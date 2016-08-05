@@ -1,7 +1,4 @@
 machine:
-  ruby:
-    version:
-      1.8.7
   environment:
     # Replace this URL with remote git server to mirror project.
     GIT_MIRROR_URL: git@internal-git.vmg.net:project.git
