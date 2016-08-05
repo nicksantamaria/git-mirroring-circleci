@@ -9,7 +9,7 @@ machine:
 test:
   override:
   # CircleCI requires at least 1 test command.
-  - true
+  - "true"
 
 deployment:
   mirror_repo:
