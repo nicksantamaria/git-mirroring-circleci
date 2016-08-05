@@ -1,0 +1,20 @@
+machine:
+  environment:
+    # Replace this URL with remote git server to mirror project.
+    GIT_MIRROR_URL: git@internal-git.vmg.net:project.git
+
+test:
+  override:
+  # CircleCI requires at least 1 test command.
+  - true
+
+deployment:
+  mirror_repo:
+    branch: /.*/
+    commands:
+      # Create a bare mirror clone of the Github repo.
+      - cd $HOME && git clone --mirror $CIRCLE_REPOSITORY_URL ${CIRCLE_PROJECT_REPONAME}_mirror
+      # Add custom git remote (called "mirror-remote".
+      - cd $HOME/${CIRCLE_PROJECT_REPONAME}_mirror && git remote add mirror-remote ${GIT_MIRROR_URL}
+      # Push to the new remote using --mirror flag.
+      - cd $HOME/${CIRCLE_PROJECT_REPONAME}_mirror && git push --mirror mirror-remote && git remote prune mirror-remote
