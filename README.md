@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/nicksantamaria/git-mirroring-circleci.svg?style=svg)](https://circleci.com/gh/nicksantamaria/git-mirroring-circleci)
 
-This project is an example of how to use CircleCI to automatically mirror a Github repository to another remote.
+This project is an example of how to use CircleCI to automatically mirror a Github repository to another remote. CircleCI offers a [free-tier](https://circleci.com/pricing/) which is sufficient for this use-case.
 
 ## Usage
 
