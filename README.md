@@ -8,7 +8,7 @@ This project is an example of how to use CircleCI to automatically mirror a Gith
 
 ### Repository Setup
 
-1. Copy the [circle.yml](circle.yml) file from this project into your repository root.
+1. Copy [circle.yml](circle.yml) from this project into your repository root.
 2. Change the `GIT_MIRROR_URL` variable to the destination git remote URL.
 3. Commit the file to your repo and push to github.
 
@@ -32,9 +32,9 @@ This example will only cover SSH key authentication.
 5. Set the "Hostname" field to the hostname of the destination git remote.
 6. Copy the newly created SSH public key, eg `pbcopy < ./reponame-id_rsa.pub`
 7. Add this public key to the destination remote. This process will depend on the system which manages the destination repository. For example:
-   - A deploy key for the destination project (ie, another github repo).
-   - A ssh key a specific user (ie, bitbucket as they dont have write access for deploy keys)
-   - An entry in `~/.ssh/authorized_keys` for custom git hosts.
+   - A deploy key with write access to the destination project (ie, another github repo).
+   - A ssh key for a specific user with write permission to the repo (ie, bitbucket as they dont have write access for deploy keys)
+   - An entry in `~/.ssh/authorized_keys` for custom git setups.
 8. Return to the CircleCI project, find the previously failed build and click "rebuild".
 
 At this point you should have a working system!
