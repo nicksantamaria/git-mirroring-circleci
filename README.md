@@ -41,4 +41,4 @@ At this point you should have a working system!
 
 ## Dogfooding
 
-To demonstrate this approach, this project uses CircleCI to mirror the repo to [Bitbucket](https://bitbucket.org/nicksantamaria/git-mirroring-circleci). The CircleCI build history can be viewed here - https://circleci.com/gh/nicksantamaria/git-mirroring-circleci
+To demonstrate this approach, this project uses CircleCI to mirror the [GitHub](https://github.com/nicksantamaria/git-mirroring-circleci) repo to [Bitbucket](https://bitbucket.org/nicksantamaria/git-mirroring-circleci). The CircleCI build history can be viewed here - https://circleci.com/gh/nicksantamaria/git-mirroring-circleci
